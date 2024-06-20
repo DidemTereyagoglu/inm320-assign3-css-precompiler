@@ -2,13 +2,17 @@
   "name": "inm320-assign3",
   "version": "1.0.0",
   "scripts": {
-    "start": "lite-server --baseDir=\"public\""
+    "start": "concurrently \"npm run server\" \"npm run sass:watch\"",
+    "server": "lite-server --baseDir=\"public\"",
+    "sass:watch": "sass src/scss:public/assets/css --watch"
   },
   "author": "didem tereyagoglu",
   "license": "private",
   "private": true,
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "concurrently": "8.2.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.77.6"
   },
   "main": "index.js",
   "keywords": [],
