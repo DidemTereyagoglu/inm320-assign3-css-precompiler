@@ -1,0 +1,16 @@
+{
+  "name": "inm320-assign3",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "didem tereyagoglu",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "description": ""
+}
